@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background-color: #000000;
+    font-family: sans-serif;
+}
+
+/*barra navegación*/
+
+.head {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #17134d;
+    padding: 10px;
+}
+.navbar a {
+    color: #ffffff;
+    text-decoration:solid;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: sans-serif;
+    margin-right: 10px;
+    padding: 10px 10px; /* Ajusta el espaciado interno para igualar la altura */
+}
+.navbar a:hover {
+    color: #e90b3b;
+    background-color: #eef1f4;
+    border-radius: 5px; /* Añade bordes redondeados si lo deseas */
+}
+
+/*Encabezado luego del navbar*/
+
+.titlesproyects {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px 25rem;
+    /*background-color: yellowgreen;*/
+    background-color: #0E8388;
+    padding: 10px; 
+}
+
+
+.content-encabezado{
+    font-size: 18px;
+    background-color: #eff0f1;
+    height: auto;
+    padding: 5px 5rem;
+    text-align: justify;
+}
+
+
+.cajaprincipal {
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px 0 rgba(223, 221, 221, 0.945);
+    padding: 5px;
+    margin: 20px 80px;
+    border-radius: 5px;
+    border:  1px solid black;
+    height: auto;
+}
+
+
+.caja1{
+    background-color: #9aacad;
+    margin: 20px;
+    width: auto;
+    height: auto;   
+    display: flex;
+    border-radius: 3px;
+}
+
+.BoxProyects{
+    background-color: #0a344dc9;
+    justify-content: left;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+.Imgproyect {
+    width: 480px;  /* Ancho de las imágenes */
+    height: 250px; /* Alto de las imágenes */
+    object-fit: cover; /* Mantener la proporción y llenar el contenedor */
+    border-radius: 5px;
+    margin: 8px;
+}
+
+.pcajas{
+    font-size: 18px;
+    padding: 40px 20px;
+    margin: 5PX;
+    text-align: justify;
+}
+
+/*----------------------------Finalización de contenido e inicio de pie de página----------------------------*/
+footer {
+    justify-content: center;
+    background-color: #201E43;
+    padding: 5px;
+    color: #ffffff;
+    text-align: center;
+}

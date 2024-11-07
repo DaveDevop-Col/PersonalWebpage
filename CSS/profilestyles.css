@@ -1,0 +1,330 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: sans-serif;
+    background-color: #000000;
+    background-attachment: fixed; /* Mantiene el fondo fijo mientras te desplazas */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    min-height: 100vh; /* Asegura que el contenido cubra toda la altura de la ventana */
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+}
+
+/*barra navegación*/
+.head {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #17134d;
+    padding: 10px;
+}
+.navbar a {
+    color: #ffffff;
+    text-decoration:solid;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: sans-serif;
+    margin-right: 10px;
+    padding: 10px 10px; /* Ajusta el espaciado interno para igualar la altura */
+}
+.navbar a:hover {
+    color: #e90b3b;
+    background-color: #eef1f4;
+    border-radius: 5px; /* Añade bordes redondeados si lo deseas */
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.boxlist {
+    display: none;
+    position: absolute;
+    background-color: #17134d;
+    min-width: 150px; /* Ancho mínimo del submenú */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    padding: 2px;
+    list-style: none;
+}
+
+.boxlist a {
+    font-size: 12px;
+    margin: 2px 5px;
+    color: #ffffff;
+    padding: 5px;
+    display: block;
+}
+
+.boxlist a:hover {
+    background-color: #eef1f4;
+    color: #e90b3b;
+    border-radius: 5px;
+}
+
+.dropdown:hover .boxlist {
+    display: block;
+}
+
+/*Titulos y parrafos general*/
+.title {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px 25rem;
+    /*background-color: yellowgreen;*/
+    background-color: #0E8388;
+    padding: 10px; 
+}
+p {
+    font-size: 20px;
+    text-align: justify;
+    padding: 0px 15px;
+}
+
+/*----------------------------Contenido por secciones-------------------------------------*/
+
+/*arreglo de las cajas que contienen las imagenes para todas las secciones*/
+.box1{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #7a9c98c2;
+    box-shadow: 0px 10px 20px 0px rgba(5, 31, 70, 0.616);
+    width: 200px;
+    height: 120px;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 5px;
+    border:  1px solid black;
+}
+.titulocajas{
+    color: #000000;
+    font-size: 15px;
+    margin: 5px 0px 15px 0px;
+}
+.Cajas{
+    display: flex;
+    justify-content: center;
+}
+
+/*-------------------------*/
+/*Section profile*/
+.content-profile{
+    background-color: #ffffff;
+    color: #000000;
+    height: auto;
+    margin: 10px 0px 0px 0px;
+    border: 1px solid transparent; /* Solo para ver el efecto */
+    text-align: center;
+}
+.imgprofile {
+    width: 220px;
+    height: auto;
+    object-fit: cover; /* Mantener la proporción y llenar el contenedor */
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.cajaprofile{
+    display: flex;
+    padding: 15px 5rem;
+}
+
+.cajaexpe{
+    padding: 5px;
+    display: flex;
+    justify-content: center;  
+}
+
+.imgexperience{
+    justify-content: center;
+    text-align: center;
+}
+
+.boxexp{
+    background-color: #ffffff;
+    text-align: center;
+    padding: 2px 0px;
+    margin: 1px 0px;
+}
+
+.imgxp{
+    width: 40px;
+    height: 40px;
+    margin: 0px 30px;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+
+h3{
+    font-size: 9px;
+    color:#000000;
+    justify-content: center;
+    margin: 5px;
+}
+
+h6{
+    font-size: 10px;
+    color:#000000;
+    justify-content: center;
+    margin: 5px;
+}
+
+/*-------------------------*/
+/*Section data*/
+.content-data{
+    /*background-color: #190631;*/
+    background-color: #cbccce;
+    height: auto;
+    margin: 10px 0px 30px 0px;
+    border: 1px solid transparent; /* Solo para ver el efecto */
+}
+.ImgData {
+    width: 115px;  /* Ancho de las imágenes */
+    height: 62px; /* Alto de las imágenes */
+    object-fit: cover; /* Mantener la proporción y llenar el contenedor */
+    border-radius: 20px;
+}
+.data {
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 50px 0 rgba(92, 91, 91, 0.945);
+    padding: 5px;
+    margin: 20px 60px;
+    border-radius: 5px;
+    border:  1px solid black;
+    height: auto;    
+}
+
+/*-------------------------*/
+/*Section devops*/
+.content-devop {
+    background-color: #0a344d;
+    height: auto;
+    margin: 30px 0px;
+    border: 1px solid transparent; /* Solo para ver el efecto */
+}
+.ImgDevps {
+    width: 77px;  /* Ancho de las imágenes */
+    height: 78px; /* Alto de las imágenes */
+    object-fit: cover; /* Mantener la proporción y llenar el contenedor */
+    border-radius: 50px;
+}
+.devop {
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px 0 rgb(133, 195, 207);
+    padding: 5px;
+    margin: 20px 60px;
+    border-radius: 5px;
+    border:  1px solid black;
+    height: auto;
+}
+
+/*-------------------------*/
+/*Section technet*/
+.content-technet {
+    background-color: #cbccce;
+    height: auto;
+    margin: 30px 0px;
+    border: 1px solid transparent; /* Solo para ver el efecto */
+}
+.Imgtech {
+    width: 78px;  /* Ancho de las imágenes */
+    height: 78px; /* Alto de las imágenes */
+    object-fit: cover; /* Mantener la proporción y llenar el contenedor */
+    border-radius: 50px;
+}
+.technet {
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 50px 0 rgba(92, 91, 91, 0.945);
+    padding: 5px;
+    margin: 20px 60px;
+    border-radius: 5px;
+    border:  1px solid black;
+    height: auto;
+}
+
+/*-------------------------*/
+/*Section technetcomputer*/
+.content-technetcomputer{
+    background-color: #0a344d;
+    height: auto;
+    margin: 30px 0px;
+    border: 1px solid transparent; /* Solo para ver el efecto */
+}
+.ImgSupport {
+    width: 78px;  /* Ancho de las imágenes */
+    height: 78px; /* Alto de las imágenes */
+    object-fit: cover; /* Mantener la proporción y llenar el contenedor */
+    border-radius: 70px;
+}
+.technetcomputer {
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px 0 rgb(133, 195, 207);
+    padding: 5px;
+    margin: 20px 60px;
+    border-radius: 5px;
+    border:  1px solid black;
+    height: auto;
+}
+
+/*-------------------------*/
+/*Section assistant*/
+.content-assistant {
+    background-color: #cbccce;
+    height: auto;
+    margin: 30px 0px;
+    border: 1px solid transparent; /* Solo para ver el efecto */
+}
+.assistant {
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 50px 0 rgba(92, 91, 91, 0.945);
+    padding: 5px;
+    margin: 20px 60px;
+    border-radius: 5px;
+    border:  1px solid black;
+    height: auto;
+}
+
+/*-------------------------*/
+/*Section bilingual*/
+.content-bilingual {
+    background-color: #0a344d;
+    height: auto;
+    margin: 30px 0px 10px 0px;
+    border: 1px solid transparent; /* Solo para ver el efecto */
+}
+.ImgLang {
+    width: 78px;  /* Ancho de las imágenes */
+    height: 78px; /* Alto de las imágenes */
+    object-fit: cover; /* Mantener la proporción y llenar el contenedor */
+    border-radius: 50px;
+}
+.bilingual {
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px 0 rgb(133, 195, 207);
+    padding: 5px;
+    margin: 20px 60px;
+    border-radius: 5px;
+    border:  1px solid black;
+    height: auto;
+}
+
+/*----------------------------Finalización de contenido e inicio de pie de página----------------------------*/
+footer {
+    justify-content: center;
+    background-color: #17134d;
+    padding: 5px;
+    color: #ffffff;
+    text-align: center;
+}
